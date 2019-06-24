@@ -1,0 +1,51 @@
+[04-Oct-2018 15:35:04 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $editorFontSize: line: 83 in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('editorFontSize')
+#2 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2149): Leafo\ScssPhp\Compiler->reduce(Array)
+#3 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1650): Leafo\ScssPhp\Compiler->reduce(Array)
+#4 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1323): Leafo\ScssPhp\Compiler->compileChild(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#5 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1076): Leafo\ScssPhp\Compiler->compileChildrenNoReturn(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#6 /home/blooblah/public_html/ in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php on line 3532
+[04-Oct-2018 15:35:05 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $editorFontSize: line: 83 in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('editorFontSize')
+#2 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2149): Leafo\ScssPhp\Compiler->reduce(Array)
+#3 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1650): Leafo\ScssPhp\Compiler->reduce(Array)
+#4 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1323): Leafo\ScssPhp\Compiler->compileChild(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#5 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1076): Leafo\ScssPhp\Compiler->compileChildrenNoReturn(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#6 /home/blooblah/public_html/ in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php on line 3532
+[04-Oct-2018 15:35:21 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $editorFontSize: line: 83 in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('editorFontSize')
+#2 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2149): Leafo\ScssPhp\Compiler->reduce(Array)
+#3 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1650): Leafo\ScssPhp\Compiler->reduce(Array)
+#4 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1323): Leafo\ScssPhp\Compiler->compileChild(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#5 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1076): Leafo\ScssPhp\Compiler->compileChildrenNoReturn(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#6 /home/blooblah/public_html/ in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php on line 3532
+[04-Oct-2018 15:38:15 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $light_grey: line: 32 in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('light_grey')
+#2 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1627): Leafo\ScssPhp\Compiler->reduce(Array)
+#3 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1323): Leafo\ScssPhp\Compiler->compileChild(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#4 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3432): Leafo\ScssPhp\Compiler->compileChildrenNoReturn(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#5 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1518): Leafo\ScssPhp\Compiler->importFile('atlas_wysiwyg.s...', Object(Leafo\ScssPh in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php on line 3532
+[04-Oct-2018 15:38:17 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $light_grey: line: 32 in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('light_grey')
+#2 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1627): Leafo\ScssPhp\Compiler->reduce(Array)
+#3 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1323): Leafo\ScssPhp\Compiler->compileChild(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#4 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3432): Leafo\ScssPhp\Compiler->compileChildrenNoReturn(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#5 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1518): Leafo\ScssPhp\Compiler->importFile('atlas_wysiwyg.s...', Object(Leafo\ScssPh in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php on line 3532
+[04-Oct-2018 15:38:21 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $light_grey: line: 32 in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('light_grey')
+#2 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1627): Leafo\ScssPhp\Compiler->reduce(Array)
+#3 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1323): Leafo\ScssPhp\Compiler->compileChild(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#4 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(3432): Leafo\ScssPhp\Compiler->compileChildrenNoReturn(Array, Object(Leafo\ScssPhp\Formatter\OutputBlock))
+#5 /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php(1518): Leafo\ScssPhp\Compiler->importFile('atlas_wysiwyg.s...', Object(Leafo\ScssPh in /home/blooblah/public_html/dev/wysiwyg/scssphp/src/Compiler.php on line 3532

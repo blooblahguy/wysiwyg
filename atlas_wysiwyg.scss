@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'atlas_wysiwyg';
+	src: url('atlas_icons.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// // Icons
+// [class*=aicon-] {
+//     display: inline-block;
+//     vertical-align: middle;
+//     position: relative;
+//     font-style: normal;
+//     color: currentColor;
+//     text-align: left;
+//     text-indent: -9999px;
+//     direction: ltr;
+// }
+
+// variables
+$primary: #069;
+$white: #fefefe;
+$black: #000;
+$grey: mix($white, $black, 90%);
+
+$fontFamily: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$fontSize: 15px;
+
+$editorBG: $white;
+$editorShadow: 0 0 4px 1px $grey;
+$editorText: $black;
+$editorPadding: 10px;
+$editorHTMLFontFamily: monospace;
+$editorHTMLFontSize: 14px;
+
+$toolbarBG: $white;
+$toolbarBorder: $black;
+$toolbarShadow: 0 1px 3px 1px $grey;
+
+$iconColor: $black;
+$iconPadding: 10px;
+$iconActiveColor: $primary;
+$iconDisabledColor: darken($white, 50%);
+$iconHoverBG: $grey;
+$iconHoverColor: $primary;
+
+[data-glyph]:before { font-family: "atlas_wysiwyg"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; text-align: center; font-variant: normal; text-transform: none; line-height: 1em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: $iconColor; font-size: 14px; -webkit-text-stroke: 0px; -webkit-backface-visibility: hidden;}
+[data-glyph].active:before, [data-glyph].dropdown_active:before {color: $iconActiveColor;}
+[data-glyph].active:hover:before, [data-glyph].dropdown_active:hover:before {color: $iconHoverColor;}
+[data-glyph="bold"]:before { content: '\e800'; }
+[data-glyph="italic"]:before { content: '\e801'; }
+[data-glyph="align-center"]:before { content: '\e802'; }
+[data-glyph="align-left"]:before { content: '\e803'; }
+[data-glyph="align-left-dropdown"]:before { content: '\e803  \e80c'; }
+[data-glyph="indent-left"]:before { content: '\e804'; }
+[data-glyph="align-right"]:before { content: '\e805'; }
+[data-glyph="indent-right"]:before { content: '\e806'; }
+[data-glyph="link"]:before { content: '\e807'; }
+[data-glyph="picture"]:before { content: '\e808'; }
+[data-glyph="cog"]:before { content: '\e809'; }
+[data-glyph="droplet"]:before { content: '\e80a'; }
+[data-glyph="list-bullet"]:before { content: '\f0ca'; }
+[data-glyph="list-numbered"]:before { content: '\f0cb'; }
+[data-glyph="strike"]:before { content: '\f0cc'; }
+[data-glyph="underline"]:before { content: '\f0cd'; }
+[data-glyph="table"]:before { content: '\f0ce'; }
+[data-glyph="quote-left"]:before { content: '\f10d'; }
+[data-glyph="smile"]:before { content: '\f118'; }
+[data-glyph="code"]:before { content: '\f121'; }
+[data-glyph="eraser"]:before { content: '\f12d'; }
+[data-glyph="paragraph"]:before { content: '\f1dd  \e80c'; }
+[data-glyph="down-micro"]:before { content: '\e80c'; } 
+
+.atlas_wysiwyg, .atlas_wysiwyg *, .atlas_wysiwyg *:after, .atlas_wysiwyg *:before {box-sizing: border-box;-moz-box-sizing:border-box; }
+.atlas_wysiwyg {
+	position:relative; width: 1000px; border-top: 3px solid $toolbarBorder; box-shadow: $editorShadow; font-family: $fontFamily; font-size: $fontSize;
+	.atlas_wrapper {position: relative;}
+	.atlas_dropdown {
+		position: absolute; z-index:100; display:none; background: $toolbarBG; color: $iconColor; max-width: 400px; box-shadow: $toolbarShadow;
+		&.dropdown_active {display:block;}
+
+		ul {padding: 0; margin:0;}
+		li {list-style:none; display:block; overflow:hidden;}
+		[data-cmd] {padding: $iconPadding; margin:0; cursor: pointer;}
+		[data-cmd]:hover {color: $iconHoverColor; background: $iconHoverBG; }
+	}
+	.atlas_editor {position: relative; z-index:1;}
+	.atlas_raw_html {position: absolute; z-index:50; top:0; left:0; right:0; bottom: 0; font-family: $editorHTMLFontFamily; background: $editorBG; color: $editorText; padding: $editorPadding; font-size: $editorHTMLFontSize; border:none; width: 100%;}
+	.atlas_editor {
+		width: 100%; min-height:200px; background: $editorBG; color: $editorText; padding: $editorPadding; resize: vertical; overflow:auto;
+		&:focus, &:active {outline:none;}
+		&:empty:before{content: attr(placeholder); display: block; color: $editorText; opacity:0.5;}
+
+		// editor element styling
+		p {margin: 0 0 $fontSize 0;}
+		blockquote {background: mix($editorBG, #888); margin: 0 0 $fontSize 0; padding: $fontSize;}
+		hr {border:none; border-bottom: 1px solid $grey; margin: $fontSize + 4 0 $fontSize; }
+	}
+}
+.atlas_toolbar {
+	width: 100%; background: $toolbarBG; box-shadow: $toolbarShadow; position:relative; z-index:5;
+	&:after {display:block; content: ''; clear: both; float:none;}
+}
+.atlas_toolbar .atlas_btn {
+	display:block; float: left; padding: $iconPadding 0; height: $iconPadding + 24px; width: $iconPadding + 28px; text-align:center; border:none; background:none; cursor: pointer;
+	&:hover, &.dropdown_active {color: $iconHoverColor; background: $iconHoverBG; }
+	&:focus, &:active {outline:none;}
+}
+.atlas_toolbar .atlas_separator {display:block; float:left; height: $iconPadding + 24px; background: $iconDisabledColor; width: 1px; margin: 0 $iconPadding;}
+.atlas_toolbar .atlas_break {display:block; height: $iconPadding + 24px; float:left; clear:both;}
+.atlas_toolbar .atlas_hr {
+	padding: $iconPadding;
+	&:after {content: ''; background: $iconColor; height: 3px; width: 100%; display:block;}
+}
+
